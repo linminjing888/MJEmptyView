@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "UIView+MJEmptyView.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //如果无网络
+    [self.view showErrorPageView];
+    [self.view configReloadAction:^{
+        NSLog(@"1111");
+    }];
+    
+    //空数据
+//    [self.view showBlankPageView];
 }
 
 
