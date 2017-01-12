@@ -25,6 +25,8 @@
     
     //空数据
 //    [self.view showBlankPageView];
+    //隐藏
+//    [self.view hideBlankPageView];
 }
 
 

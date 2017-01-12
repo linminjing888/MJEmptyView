@@ -69,6 +69,8 @@
 - (void)setBlankPageView:(MJBlankPageView *)blankPageView{
     [self willChangeValueForKey:NSStringFromSelector(@selector(blankPageView))];
     objc_setAssociatedObject(self, @selector(blankPageView), blankPageView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+    
     [self didChangeValueForKey:NSStringFromSelector(@selector(blankPageView))];
 }
 - (MJBlankPageView *)blankPageView{

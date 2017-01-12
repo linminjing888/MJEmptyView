@@ -17,7 +17,7 @@
 - (void)showErrorPageView;
 - (void)hideErrorPageView;
 
-//OSCBlankPageView
+//MJBlankPageView
 @property (nonatomic,strong) MJBlankPageView* blankPageView;
 - (void)showBlankPageView;
 - (void)hideBlankPageView;
